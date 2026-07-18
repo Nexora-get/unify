@@ -138,3 +138,10 @@ When asking for help, share what the `D` debug panel shows.
 ## Credits
 
 Built with [mpv](https://mpv.io), [yt-dlp](https://github.com/yt-dlp/yt-dlp), [ytmusicapi](https://github.com/sigma67/ytmusicapi), [Rich](https://github.com/Textualize/rich), lyrics from [lrclib.net](https://lrclib.net). All open source.
+
+---
+
+## Made by-
+
+@itsrachitraj
+@aceauspicio
