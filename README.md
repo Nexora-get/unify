@@ -8,8 +8,6 @@ A terminal music player powered by YouTube Music. Search songs, get synced lyric
 
 ![Unify player](https://raw.githubusercontent.com/Nexora-get/unify/main/screenshots/player.webp)
 
-![Unify home screen](https://raw.githubusercontent.com/Nexora-get/unify/main/screenshots/home.webp)
-
 ---
 
 ## Requirements
