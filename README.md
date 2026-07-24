@@ -1,8 +1,14 @@
 # Unify 🎵
 
-A terminal music player powered by YouTube Music. Search songs, get synced lyrics, manage playlists — all from your terminal.
+A terminal music player powered by YouTube Music. Search songs, get synced lyrics, manage playlists — all from your terminal. Works out of the box on Linux, macOS and Windows.
 
 > Unofficial client. Not affiliated with YouTube or Google.
+
+---
+
+![Unify player](https://raw.githubusercontent.com/Nexora-get/unify/main/screenshots/player.png)
+
+![Unify home screen](https://raw.githubusercontent.com/Nexora-get/unify/main/screenshots/home.png)
 
 ---
 
@@ -20,6 +26,29 @@ py unify.py         # Windows
 ```
 
 First run takes ~30 seconds to set up. Every run after is instant.
+
+---
+
+## Troubleshooting
+
+**Something broke** → press `D` inside the app — the debug panel shows exactly what's failing
+
+**Search doesn't work** → YouTube changed their API; wait 24h for the auto-update, or force it:
+```bash
+~/.unify/env/bin/pip install -U ytmusicapi yt-dlp          # Linux/macOS
+%USERPROFILE%\.unify\env\Scripts\pip install -U ytmusicapi yt-dlp  # Windows
+```
+
+**Songs skip instantly** → open debug panel (`D`), check MPV STDERR section
+
+**mpv won't install on Windows** → run `winget install Mpv.Mpv` in PowerShell, or [download manually](https://sourceforge.net/projects/mpv-player-windows/files/64bit/)
+
+**No lyrics** → that song isn't in [lrclib.net](https://lrclib.net)'s database yet
+
+**Reset everything** → delete `~/.unify/` (Linux/macOS) or `%USERPROFILE%\.unify\` (Windows), then run again
+
+**Still stuck?** → join the Discord: **[discord.gg/kWVPEHr3nA](https://discord.gg/kWVPEHr3nA)**  
+Share what the `D` debug panel shows when asking for help.
 
 ---
 
@@ -98,50 +127,12 @@ First run takes ~30 seconds to set up. Every run after is instant.
 
 ---
 
-## Troubleshooting
-
-**Something broke** → press `D` inside the app, the debug panel shows exactly what's failing
-
-**Search doesn't work** → YouTube changed their API; wait 24h for auto-update, or force it:
-```bash
-~/.unify/env/bin/pip install -U ytmusicapi yt-dlp          # Linux/macOS
-%USERPROFILE%\.unify\env\Scripts\pip install -U ytmusicapi yt-dlp  # Windows
-```
-
-**Songs skip instantly** → open debug panel (`D`), check MPV STDERR section
-
-**mpv won't install on Windows** → run `winget install Mpv.Mpv` in PowerShell, or [download manually](https://sourceforge.net/projects/mpv-player-windows/files/64bit/)
-
-**No lyrics** → that song isn't in [lrclib.net](https://lrclib.net)'s database yet
-
-**Reset everything** → delete `~/.unify/` (Linux/macOS) or `%USERPROFILE%\.unify\` (Windows), then run again
-
-**Still stuck?** → join the Discord: **[your invite link]**  
-When asking for help, share what the `D` debug panel shows.
-
----
-
-## Platform Support
-
-| Platform | Status |
-|----------|--------|
-| Arch Linux | ✅ |
-| Linux Mint | ✅ |
-| Ubuntu / Debian | ✅ |
-| Fedora | ✅ |
-| openSUSE | ✅ |
-| macOS | ✅ |
-| Windows 10/11 | ✅ |
-
----
-
 ## Credits
 
 Built with [mpv](https://mpv.io), [yt-dlp](https://github.com/yt-dlp/yt-dlp), [ytmusicapi](https://github.com/sigma67/ytmusicapi), [Rich](https://github.com/Textualize/rich), lyrics from [lrclib.net](https://lrclib.net). All open source.
 
 ---
 
-## Made by-
+## Made by
 
-@itsrachitraj
-@aceauspicio
+[@aceauspicio](https://github.com/aceauspicio) · [@itsrachitraj](https://github.com/itsrachitraj)
